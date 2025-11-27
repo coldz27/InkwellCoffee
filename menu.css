@@ -1,0 +1,133 @@
+.container-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start; 
+    justify-content: center;
+    justify-content: space-between; 
+    justify-content: space-around; 
+    justify-content: space-evenly;
+}
+
+
+        /* Reset para garantir que não haja margens indesejadas */
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        
+        /* Container principal com padding para espaçamento */
+        .main-container {
+            padding: 20px 0;
+        }
+        
+        /* Container personalizado para o carrossel */
+        .carousel-container {
+            max-width: 900px;
+            margin: 0 auto;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Ajuste das imagens do carrossel - altura proporcional */
+        .carousel-item {
+            height: 500px; /* Altura fixa para o item do carrossel */
+        }
+        
+        .carousel-item img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover; /* Mantém a proporção e cobre todo o espaço */
+        }
+        
+        /* Melhorias nos controles do carrossel */
+        .carousel-control-prev,
+        .carousel-control-next {
+            width: 5%;
+        }
+        
+        /* Melhorias nos indicadores */
+        .carousel-indicators {
+            bottom: 20px;
+        }
+        
+        .carousel-indicators button {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            margin: 0 5px;
+        }
+        
+        /* Melhorias nas legendas */
+        .carousel-caption {
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 8px;
+            padding: 15px;
+            bottom: 40px;
+            left: 10%;
+            right: 10%;
+        }
+        
+        .carousel-caption h5 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        
+        /* Estilo para o conteúdo adicional */
+        .content-section {
+            margin-top: 40px;
+        }
+        
+        .product-card {
+            border: none;
+            border-radius: 10px;
+            transition: transform 0.3s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .product-card img {
+            height: 200px;
+            object-fit: cover;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        
+        .card-body {
+            padding: 20px;
+        }
+        
+        /* Responsividade para telas menores */
+        @media (max-width: 768px) {
+            .carousel-item {
+                height: 350px;
+            }
+            
+            .carousel-caption {
+                bottom: 20px;
+                left: 5%;
+                right: 5%;
+            }
+            
+            .carousel-caption h5 {
+                font-size: 1.2rem;
+            }
+            
+            .carousel-caption p {
+                font-size: 0.9rem;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .carousel-item {
+                height: 250px;
+            }
+            
+            .carousel-caption {
+                display: none; /* Oculta legendas em telas muito pequenas */
+            }
+        }
