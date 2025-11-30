@@ -11,39 +11,47 @@
 
 <body>
     <header>
-        <div class="logo">☕</div>
+        <a href="index.html">
+            <img src="img/Logo.png" class="logo"
+                alt="Um dragão verde a segurar um pincel pingado por tinta marrom, semelhante a café">
+        </a>
         <nav>
-            <a href="HTML/menu.html">Menu</a>
-            <a href="HTML/quemsomos.html">Quem somos?</a>
+            <a href="menu.html">Menu</a>
+            <a href="quemsomos.html">Quem somos?</a>
             <a href="https://www.google.com/maps">Encontre uma loja</a>
         </nav>
     </header>
 
     <main>
-        <!-- Primeira linha -->
-        <div class="linha">
-            <!-- Esquerda = texto -->
-            <div class="caixa-texto">
-                <h2>Sobre nosso café</h2>
-                <p>Usamos grão selecionados com cuidado, torrados de forma artesanal para garantir o melhor café em cada
-                    xícara.</p>
+        <!-- Banner 1 -->
+        <section class="banner">
+            <div class="banner-texto">
+                <h2>Nosso espaço</h2>
+                <p>
+                    Em nossa loja, temos bebidas e comidas temáticas, espaços aconchegantes para você ler, trabalhar ou
+                    até bater um papo.
+                </p>
+                <button>Saber mais</button>
             </div>
-            <!-- Direita = imagem -->
-            <div class="caixa-imagem" style="background-image: url('img/graoscafe.jpg');"></div>
-        </div>
 
-        <!-- Segunda linha -->
-        <div class="linha">
-            <!-- Esquerda = imagem -->
-            <div class="caixa-imagem" style="background-image: url('img/cafeteria.jpg');"></div>
-            <!-- Direita = texto -->
-            <div class="caixa-texto">
-                <h2>Nossa Loja</h2>
-                <p>Em nossa loja, temos bebidas e comidas temáticas, espaços aconchegantes para você ler, trabalhar ou
-                    até
-                    bater um papo.</p>
+            <div class="banner-media">
+                <img src="img/cafes.jpeg" alt="Cafés" class="banner-img">
             </div>
-        </div>
+        </section>
+
+        <section class="banner-invertido">
+            <div class="banner-media">
+                <img src="img/graoscafe.jpeg" alt="Grãos de café" class="banner-img">
+            </div>
+            <div class="banner-texto">
+                <h2>O plantio importa</h2>
+                <p>
+                    Usamos grãos selecionados com cuidado, torrados de forma artesanal para garantir o melhor café em
+                    cada xícara.
+                </p>
+                <button>Saber mais</button>
+            </div>
+        </section>
     </main>
 
     <footer>
@@ -56,6 +64,8 @@
                 <ion-icon name="logo-instagram"></ion-icon>
             </a>
         </div>
+
+        <p class="copy">© 2025 Inkwell Coffee — Criando mundos, um gole por vez.</p>
     </footer>
 
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
