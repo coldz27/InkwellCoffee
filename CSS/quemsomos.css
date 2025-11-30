@@ -1,20 +1,100 @@
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body{
-  background-color: #cdbea1;
+body {
+  background-color: #f3ebd5;
+  font-family: 'Montserrat', Arial, sans-serif;
 }
-header{
+
+/* Header */
+header {
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
-  background-color: #6b4b35;
+  background-color: #1b901b;
   color: white;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   padding: 10px 50px;
+}
+
+.logo {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Conteúdo */
+main {
+  padding: 50px 60px;
+}
+
+.sobre {
+  max-width: 900px;
+  margin: auto;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 14px;
+  border-left: 7px solid #4c3314;
+}
+
+.sobre h1 {
+  color: #4c3314;
+  margin-bottom: 25px;
+  font-size: 36px;
+}
+
+.sobre p {
+  color: #6a5131;
+  font-size: 17px;
+  line-height: 1.7;
+  margin-bottom: 22px;
+}
+
+/* Footer */
+footer {
+  margin-top: 60px;
+  padding: 25px 0;
+  background-color: #1b901b;
+  text-align: center;
+  color: white;
+}
+
+.social-links {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.social-links a {
+  color: white;
+  font-size: 28px;
+  transition: 0.3s;
+}
+
+.social-links a:hover {
+  color: #9bda85;
+}
+
+.copy {
+  font-size: 14px;
+  opacity: 0.9;
 }

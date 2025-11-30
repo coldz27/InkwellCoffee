@@ -7,38 +7,50 @@
     <title>Produto - Loja Exemplo</title>
     <!--CSS -->
     <link rel="stylesheet" href="../CSS/pratos/crimeecastigo.css">
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
 
 </head>
 
 
 
 <body>
-    <!-- barra la de cima -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <a class="navbar-brand" href="../index.html">Inkwell Coffee</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="../index.html">Início</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../menu.html">Menu</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../quemsomos.html">Sobre</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://www.google.com/maps">achar uma Loja</a>
-                    </li>
-                </ul>
+    <header>
+        <a href="../index.html">
+            <img src="img/Logo.png" class="logo"
+                alt="Um dragão verde a segurar um pincel pingado por tinta marrom, semelhante a café">
+        </a>
+        <nav>
+            <a href="menu.html">Menu</a>
+            <a href="quemsomos.html">Quem somos?</a>
+            <a href="https://www.google.com/maps">Encontre uma loja</a>
+            <div class="d-flex">
+                <div class="nav-item position-relative me-3">
+                    <a class="nav-link" href="carrinho.html" id="cartIcon">
+                        <i class="bi bi-cart3"></i>
+                        <span class="cart-badge" id="cartBadge">0</span>
+                    </a>
+                </div>
+                <div class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                        <i class="bi bi-person-circle"></i> Minha Conta
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="perfil.html">Login</a></li>
+                        <li><a class="dropdown-item" href="perfil.html">Registrar</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="../index.html">Sair</a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
+
+
 
     <!-- Conteúdo Principal -->
     <div class="container my-5">
@@ -62,12 +74,19 @@
 
                 <h3 class="section-title">Descrição</h3>
                 <div class="product-description">
-                    <p>Não é apenas um bolo. É uma confissão em camadas. O "Crime & Carmesim" é a nossa interpretação culimária do tormento interior de Raskólnikov: uma indulgência profunda, intensa e arrependidamente deliciosa. 
-                        A massa é de um veludo vermelho escuro e aveludado, tão rico e misterioso quanto as motivações de um homem atormentado. Sua cor carmesim não grita; sussurra, lembrando aquele sangue derramado e o peso de uma consciência culpada.
+                    <p>Não é apenas um bolo. É uma confissão em camadas. O "Crime & Carmesim" é a nossa interpretação
+                        culimária do tormento interior de Raskólnikov: uma indulgência profunda, intensa e
+                        arrependidamente deliciosa.
+                        A massa é de um veludo vermelho escuro e aveludado, tão rico e misterioso quanto as motivações
+                        de um homem atormentado. Sua cor carmesim não grita; sussurra, lembrando aquele sangue derramado
+                        e o peso de uma consciência culpada.
                     </p>
 
-                    <p>Entre as camadas, um recheio de cream cheese branco puro age como a frágil ilusão de inocência e razão que se desfaz perante a loucura. O frosting é deliberadamente irregular, quase uma "pincelada" expressionista, representando a psique fragmentada do protagonista.
-                        Finalmente, uma chuva de migalhas de bolo torrado e cacau em pó sobre o topo simboliza o castigo iminente, a terra fria da Sibéria e a inevitabilidade do julgamento.
+                    <p>Entre as camadas, um recheio de cream cheese branco puro age como a frágil ilusão de inocência e
+                        razão que se desfaz perante a loucura. O frosting é deliberadamente irregular, quase uma
+                        "pincelada" expressionista, representando a psique fragmentada do protagonista.
+                        Finalmente, uma chuva de migalhas de bolo torrado e cacau em pó sobre o topo simboliza o castigo
+                        iminente, a terra fria da Sibéria e a inevitabilidade do julgamento.
                     </p>
 
                 </div>
@@ -77,28 +96,27 @@
                     <li class="list-group-item">Peso: 300g</li>
                     <li class="list-group-item">Açúcar: 300mg</li>
                     <li class="list-group-item">Calorias: 3000 (1 fatia)</li>
-                    <li class="list-group-item">Outros nutrientes: urânio enriquecido, morango, leite, neve da antártida</li>
+                    <li class="list-group-item">Outros nutrientes: urânio enriquecido, morango, leite, neve da antártida
+                    </li>
 
                 </ul>
             </div>
         </div>
     </div>
 
-    <!-- Rodapé -->
-    <footer class="bg-dark text-light py-4 mt-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <h5>Inkweel Coffee</h5>
-                    <p>Os melhores desde a invenção do café.</p>
-                </div>
-                <div class="col-md-6 text-md-end">
-                    <p>&copy; 2070 Inkweel Coffee. Todos os direitos reservados.</p>
-                </div>
-            </div>
+    <footer>
+        <div class="social-links">
+            <a href="https://www.youtube.com/" target="_blank">
+                <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+
+            <a href="https://www.instagram.com/" target="_blank">
+                <ion-icon name="logo-instagram"></ion-icon>
+            </a>
         </div>
+
+        <p class="copy">© 2025 Inkwell Coffee — Criando mundos, um gole por vez.</p>
     </footer>
 
-
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>

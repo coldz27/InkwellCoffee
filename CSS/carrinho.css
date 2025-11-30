@@ -1,0 +1,186 @@
+footer {
+    margin-top: 60px;
+    padding: 25px 0;
+    background-color: #1b901b;
+    text-align: center;
+    color: white;
+}
+
+.social-links {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.social-links a {
+    color: white;
+    font-size: 28px;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    color: #9bda85;
+}
+
+.copy {
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+}
+
+
+.cart-item img {
+    height: 80px;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+}
+
+:root {
+    --primary-color: #1daeb3;
+    --secondary-color: #f8f9fa;
+    --text-color: #333;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: var(--text-color);
+}
+
+.navbar {
+    background-color: var(--primary-color);
+}
+
+.navbar-brand,
+.nav-link {
+    color: white !important;
+}
+
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    margin-bottom: 20px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #044d3a;
+}
+
+.cart-item {
+    border-bottom: 1px solid #eee;
+    padding: 15px 0;
+}
+
+.cart-item:last-child {
+    border-bottom: none;
+}
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+}
+
+.quantity-btn {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e9ecef;
+    border: none;
+    cursor: pointer;
+}
+
+.quantity-input {
+    width: 50px;
+    text-align: center;
+    margin: 0 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.cart-summary {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 20px;
+}
+
+.empty-cart {
+    text-align: center;
+    padding: 40px;
+}
+
+.empty-cart i {
+    font-size: 4rem;
+    color: #6c757d;
+    margin-bottom: 20px;
+}
+
+.product-price {
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.cart-badge {
+    background-color: #dc3545;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 0.7rem;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+}
+
+header {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    background-color: #1b901b;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 50px;
+}
+
+.logo {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
