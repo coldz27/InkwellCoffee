@@ -1,12 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html>  
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="home.css">
     <script defer src="JS/home.js"></script>
-        <!-- Bootstrap CSS -->
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
@@ -14,39 +14,66 @@
 </head>
 
 <body>
-    <header>
-        <a href="#">
-            <img src="HTML/img/Logo.png" class="logo"
-                alt="Um dragão verde a segurar um pincel pingado por tinta marrom, semelhante a café">
-        </a>
-        <nav>
-            <a href="HTML/menu.html">Menu</a>
-            <a href="HTML/quemsomos.html">Quem somos?</a>
-            <a href="https://www.google.com/maps">Encontre uma loja</a>
-            <div class="d-flex">
-                <div class="nav-item position-relative me-3">
-                    <a class="nav-link" href="HTML/carrinho.html" id="cartIcon">
-                        <i class="bi bi-cart3"></i>
-                        <span class="cart-badge" id="cartBadge">0</span>
-                    </a>
-                </div>
-                <div class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="HTML/perfil.html" role="button" data-bs-toggle="dropdown">
-                        <i class="bi bi-person-circle"></i> Minha Conta
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="HTML/perfil.html">Login</a></li>
-                        <li><a class="dropdown-item" href="HTML/perfil.html">Registrar</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
+    <header class="header-responsive sticky-top">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="HTML/img/Logo.png" class="logo"
+                        alt="Um dragão verde a segurar um pincel pingado por tinta marrom, semelhante a café">
+                </a>
+                
+                <!-- Botão hamburguer para mobile -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#navbarInkwell" aria-controls="navbarInkwell" 
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <!-- Conteúdo do menu -->
+                <div class="collapse navbar-collapse" id="navbarInkwell">
+                    <!-- Links de navegação -->
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="HTML/menu.html">Menu</a>
                         </li>
-                        <li><a class="dropdown-item" href="index.html">Sair</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="HTML/quemsomos.html">Quem somos?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.google.com/maps">Encontre uma loja</a>
+                        </li>
                     </ul>
+                    
+                    <!-- Ícones do carrinho e perfil -->
+                    <div class="d-flex flex-column flex-lg-row align-items-start align-items-lg-center">
+                        <!-- Carrinho -->
+                        <div class="nav-item position-relative me-0 me-lg-3 mb-2 mb-lg-0">
+                            <a class="nav-link" href="HTML/carrinho.html" id="cartIcon">
+                                <i class="bi bi-cart3 fs-5"></i>
+                                <span class="cart-badge badge bg-danger rounded-pill" id="cartBadge">0</span>
+                            </a>
+                        </div>
+                        
+                        <!-- Dropdown da conta -->
+                        <div class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="HTML/perfil.html" role="button" 
+                               data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-person-circle"></i> Minha Conta
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><a class="dropdown-item" href="HTML/perfil.html">Login</a></li>
+                                <li><a class="dropdown-item" href="HTML/perfil.html">Registrar</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="index.html">Sair</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </nav>
     </header>
 
+    <!-- O resto do seu conteúdo permanece igual -->
     <main>
         <!-- Banner 1 -->
         <section class="banner">
@@ -74,7 +101,10 @@
                     Usamos grãos selecionados com cuidado, torrados de forma artesanal para garantir o melhor café em
                     cada xícara.
                 </p>
+            <a href="https://pt.wikipedia.org/wiki/Cafeeiro">
                 <button>Saber mais</button>
+            </a>
+
             </div>
         </section>
     </main>
@@ -94,7 +124,7 @@
     </footer>
 
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
-
+    <!-- Bootstrap JS (necessário para o menu hamburguer funcionar) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>

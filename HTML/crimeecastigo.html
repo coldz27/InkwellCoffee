@@ -17,34 +17,60 @@
 
 
 <body>
-    <header>
-        <a href="../index.html">
-            <img src="img/Logo.png" class="logo"
-                alt="Um dragão verde a segurar um pincel pingado por tinta marrom, semelhante a café">
-        </a>
-        <nav>
-            <a href="menu.html">Menu</a>
-            <a href="quemsomos.html">Quem somos?</a>
-            <a href="https://www.google.com/maps">Encontre uma loja</a>
-            <div class="d-flex">
-                <div class="nav-item position-relative me-3">
-                    <a class="nav-link" href="carrinho.html" id="cartIcon">
-                        <i class="bi bi-cart3"></i>
-                        <span class="cart-badge" id="cartBadge">0</span>
-                    </a>
-                </div>
-                <div class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-                        <i class="bi bi-person-circle"></i> Minha Conta
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="perfil.html">Login</a></li>
-                        <li><a class="dropdown-item" href="perfil.html">Registrar</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
+    <header class="header-responsive sticky-top">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="img/Logo.png" class="logo"
+                        alt="Um dragão verde a segurar um pincel pingado por tinta marrom, semelhante a café">
+                </a>
+                
+                <!-- Botão hamburguer para mobile -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#navbarInkwell" aria-controls="navbarInkwell" 
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <!-- Conteúdo do menu -->
+                <div class="collapse navbar-collapse" id="navbarInkwell">
+                    <!-- Links de navegação -->
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="menu.html">Menu</a>
                         </li>
-                        <li><a class="dropdown-item" href="../index.html">Sair</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="quemsomos.html">Quem somos?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.google.com/maps">Encontre uma loja</a>
+                        </li>
                     </ul>
+                    
+                    <!-- Ícones do carrinho e perfil -->
+                    <div class="d-flex flex-column flex-lg-row align-items-start align-items-lg-center">
+                        <!-- Carrinho -->
+                        <div class="nav-item position-relative me-0 me-lg-3 mb-2 mb-lg-0">
+                            <a class="nav-link" href="HTML/carrinho.html" id="cartIcon">
+                                <i class="bi bi-cart3 fs-5"></i>
+                                <span class="cart-badge badge bg-danger rounded-pill" id="cartBadge">0</span>
+                            </a>
+                        </div>
+                        
+                        <!-- Dropdown da conta -->
+                        <div class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" 
+                               data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-person-circle"></i> Minha Conta
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><a class="dropdown-item" href="perfil.html">Login</a></li>
+                                <li><a class="dropdown-item" href="perfil.html">Registrar</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="../index.html">Sair</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </nav>

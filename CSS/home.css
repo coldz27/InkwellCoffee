@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +6,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 
-header{
+header {
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   background-color: #6b4b35;
@@ -18,7 +17,7 @@ header{
   padding: 10px 50px;
 }
 
-body{
+body {
   background-color: #d2c0a2;
   font-family: Arial, sans-serif;
 }
@@ -39,4 +38,50 @@ main {
   padding: 40px 50px;
 }
 
+/* Estilo específico para o dropdown do perfil - VERDE CLARO */
+.header-responsive .dropdown-menu {
+  background-color: #2E8B57;
+  /* Verde escuro de base */
+  border: none;
+  border-radius: 8px;
+  padding: 0.5rem 0;
+}
 
+.header-responsive .dropdown-item {
+  color: white !important;
+  padding: 0.75rem 1.5rem;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+/* COR VERDE CLARA nos botões */
+.header-responsive .dropdown-item:hover,
+.header-responsive .dropdown-item:focus {
+  background-color: #3CB371 !important;
+  /* Verde médio/claro */
+  color: white !important;
+  transform: translateX(5px);
+}
+
+/* Cor mais clara para o item ativo */
+.header-responsive .dropdown-item:active {
+  background-color: #20B2AA !important;
+  /* Verde água mais claro */
+}
+
+/* Divisor em branco translúcido */
+.header-responsive .dropdown-divider {
+  border-color: rgba(255, 255, 255, 0.3);
+  margin: 0.5rem 0;
+}
+
+/* Ícones dentro do dropdown */
+.header-responsive .dropdown-item i {
+  margin-right: 10px;
+  opacity: 0.9;
+}
+
+/* Sombra para destacar */
+.header-responsive .dropdown-menu {
+  box-shadow: 0 5px 20px rgba(46, 139, 87, 0.3);
+}

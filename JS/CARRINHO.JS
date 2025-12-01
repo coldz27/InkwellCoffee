@@ -1,44 +1,44 @@
 const products = [
     {
         id: 1,
-        name: "batata minecraft",
-        description: "batata frita crocante inspirada no universo Minecraft.",
-        price: 1299.99,
+        name: "Batata Minecraft",
+        description: "Batata frita crocante inspirada no universo Minecraft.",
+        price: 6.67,
         image: "img/FFmine.png"
     },
     {
         id: 2,
-        name: "bolo crime & carmesim",
+        name: "Bolo Crime & Carmesim",
         description: "Bolo com textura aveludada e sabor intenso, inspirado na obra clássica de Dostoiévski.",
-        price: 2499.99,
+        price: 24.99,
         image: "img/Crimeecastigo.png"
     },
     {
         id: 3,
-        name: "sticks de frango breaking bad",
+        name: "Sticks de Frango Breaking Bad",
         description: "Tiras de frango crocantes com um tempero especial que vai viciar seu paladar.",
-        price: 299.99,
+        price: 13.99,
         image: "img/sticksBB.png"
     },
     {
         id: 4,
         name: "Waffle de Xadrez",
         description: "Delicioso waffle com design inspirado no clássico jogo de xadrez.",
-        price: 599.99,
+        price: 14.99,
         image: "img/wafllechess.png"
     },
     {
         id: 5,
-        name: "coockie wandinha",
+        name: "Cookie Wandinha",
         description: "Delicioso cookie com design inspirado na série Wandinha.",
-        price: 899.99,
+        price: 8.99,
         image: "img/cookiewandinha.png"
     },
     {
         id: 6,
         name: "Combo Revolução dos Bichos",
         description: "Delicioso combo com itens inspirados no clássico literário de George Orwell.",
-        price: 199.99,
+        price: 60.99,
         image: "img/comborevdosb.png"
     }
 ];
